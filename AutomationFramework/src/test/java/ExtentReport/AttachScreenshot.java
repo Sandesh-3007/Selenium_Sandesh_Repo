@@ -6,6 +6,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -23,6 +24,7 @@ public class AttachScreenshot
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		driver.get("https://demowebshop.tricentis.com/");
+		Reporter.log("Github trial Successful",true);
 		Reporter.log("Github trial Successful",true);
         TakesScreenshot ts = (TakesScreenshot) driver;
         String Screenshot = ts.getScreenshotAs(OutputType.BASE64);
