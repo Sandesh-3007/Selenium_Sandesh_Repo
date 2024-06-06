@@ -23,6 +23,7 @@ public class AttachScreenshot
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		driver.get("https://demowebshop.tricentis.com/");
+		Reporter.log("Github trial Successful",true);
         TakesScreenshot ts = (TakesScreenshot) driver;
         String Screenshot = ts.getScreenshotAs(OutputType.BASE64);
         
